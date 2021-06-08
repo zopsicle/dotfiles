@@ -1,5 +1,14 @@
 { pkgs, ... }:
 
+let
+    # Latest Minecraft requires a newer JDK.
+    multimc_jdk16 = pkgs.multimc.override { jdk8 = pkgs.jdk16; };
+    multimc_patched = multimc_jdk16.overrideAttrs (super: {
+        patches = [ multimc/java-version.patch ];
+    });
+    multimc = multimc_patched;
+in
+
 {
     # Packages that are installed globally.
     environment.systemPackages = [
@@ -23,7 +32,6 @@
         pkgs.krita                  # Bitmap graphics editor.
         pkgs.lxappearance           # Needed to change GTK+ preferences.
         pkgs.man-pages              # Manual pages.
-        pkgs.multimc                # Minecraft launcher.
         pkgs.obs-studio             # Live streaming tool.
         pkgs.pavucontrol            # GUI for adjusting audio volume.
         pkgs.peek                   # Animated GIF recorder.
@@ -50,5 +58,8 @@
         # This shit still doesn’t work well.
         pkgs.gnome3.adwaita-icon-theme
         pkgs.hicolor-icon-theme
+
+        # Patched programs.
+        multimc                     # Minecraft launcher.
     ];
 }
