@@ -6,6 +6,7 @@
     boot.initrd.availableKernelModules = [
         "xhci_pci" "ehci_pci" "ahci"
         "usbhid" "usb_storage" "sd_mod"
+        "amdgpu"
     ];
     boot.initrd.kernelModules = [ ];
     boot.kernelModules = [ "kvm-intel" ];
