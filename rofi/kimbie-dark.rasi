@@ -1,0 +1,27 @@
+*
+{
+    background-color: #221A0F;
+    text-color: #D3AF86;
+    font: "Terminus (TTF) 13.5";
+}
+
+inputbar, entry, case-indicator
+{
+    background-color: #645342;
+}
+
+prompt
+{
+    enabled: false;
+}
+
+entry, element
+{
+    padding: 2.5px 3px;
+}
+
+element selected
+{
+    background-color: #645342;
+    text-color: #DC9940;
+}
