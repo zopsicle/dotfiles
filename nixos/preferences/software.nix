@@ -46,7 +46,6 @@ in
         pkgs.transmission-gtk       # BitTorrent client.
         pkgs.tree                   # Provides tree command.
         pkgs.unzip                  # Provides unzip command.
-        pkgs.vim                    # Shitty text editor.
         pkgs.vlc                    # VLC media player.
         pkgs.vscode                 # Good text editor.
         pkgs.wget                   # Provides wget command.
