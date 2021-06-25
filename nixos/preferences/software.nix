@@ -33,6 +33,7 @@ in
         pkgs.lxappearance           # Needed to change GTK+ preferences.
         pkgs.man-pages              # Manual pages.
         pkgs.obs-studio             # Live streaming tool.
+        pkgs.openscad               # CAD tool.
         pkgs.pavucontrol            # GUI for adjusting audio volume.
         pkgs.peek                   # Animated GIF recorder.
         pkgs.picard                 # Fixes ID3 tags in music.
