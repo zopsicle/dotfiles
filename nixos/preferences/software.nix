@@ -19,6 +19,7 @@ in
         pkgs.cura                   # Used for 3D printing.
         pkgs.dconf                  # No idea, but needed.
         pkgs.electrum               # Bitcoin wallet.
+        pkgs.evince                 # PDF reader.
         pkgs.feh                    # Sets wallpaper.
         pkgs.ffmpeg                 # Converts videos.
         pkgs.file                   # Provides file command.
