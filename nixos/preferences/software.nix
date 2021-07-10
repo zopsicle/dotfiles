@@ -16,6 +16,7 @@ in
         pkgs.bind                   # Provides dig command.
         pkgs.binutils               # Provides objdump command.
         pkgs.blender                # 3D modeling program.
+        pkgs.blockbench-electron    # 3D modeling program for Minecraft models.
         pkgs.cura                   # Used for 3D printing.
         pkgs.dconf                  # No idea, but needed.
         pkgs.electrum               # Bitcoin wallet.
@@ -32,6 +33,7 @@ in
         pkgs.jq                     # Provides jq command.
         pkgs.krita                  # Bitmap graphics editor.
         pkgs.lxappearance           # Needed to change GTK+ preferences.
+        pkgs.magic-wormhole         # File transfer tool.
         pkgs.man-pages              # Manual pages.
         pkgs.obs-studio             # Live streaming tool.
         pkgs.openscad               # CAD tool.
@@ -51,9 +53,9 @@ in
         pkgs.vlc                    # VLC media player.
         pkgs.vscode                 # Good text editor.
         pkgs.wget                   # Provides wget command.
+        pkgs.xpad                   # Sticky notes app.
         pkgs.youtube-dl-light       # Downloads YouTube videos.
         pkgs.zip                    # Provides zip command.
-        pkgs.xpad                   # Sticky notes app.
 
         # Icon themes for GTK+ apps.
         # This shit still doesn’t work well.
