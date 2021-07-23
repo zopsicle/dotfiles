@@ -16,4 +16,9 @@
 
     # Enable the compose key.
     services.xserver.xkbOptions = "ctrl:nocaps, compose:ralt";
+
+    # Enable touchpad support.
+    services.xserver.libinput.enable = true;
+    services.xserver.libinput.touchpad.naturalScrolling = false;
+    services.xserver.libinput.touchpad.tapping = true;
 }
