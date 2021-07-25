@@ -65,7 +65,6 @@
         pkgs.vlc                    # VLC media player.
         pkgs.vscode                 # Good text editor.
         pkgs.wget                   # Provides wget command.
-        pkgs.xpad                   # Sticky notes app.
         pkgs.youtube-dl-light       # Downloads YouTube videos.
         pkgs.zip                    # Provides zip command.
 
