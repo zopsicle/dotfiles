@@ -18,6 +18,10 @@
 
             " Enable syntax highlighting.
             syntax on
+
+            " Make backspace behave like any reasonable being would expect.
+            " Holy shit the default behavior is so fucking broken.
+            set backspace=indent,eol,start
         '';
 
     };
