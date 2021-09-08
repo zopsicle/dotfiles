@@ -1,15 +1,26 @@
 { pkgs, ... }:
 
-let
-    # Latest Minecraft requires a newer JDK.
-    multimc_jdk16 = pkgs.multimc.override { jdk8 = pkgs.jdk16; };
-    multimc_patched = multimc_jdk16.overrideAttrs (super: {
-        patches = [ multimc/java-version.patch ];
-    });
-    multimc = multimc_patched;
-in
-
 {
+    nixpkgs.config.packageOverrides = pkgs: {
+
+        # Latest Minecraft requires a newer JDK.
+        multimc =
+            let
+                with_jdk16 = pkgs.multimc.override { jdk8 = pkgs.jdk16; };
+                with_patches = with_jdk16.overrideAttrs (super: {
+                    patches = [ multimc/java-version.patch ];
+                });
+            in
+                with_patches;
+
+        # Apply a patch to fix a bug [1].
+        # [1]: https://github.com/libpinyin/libpinyin/pull/119
+        libpinyin = pkgs.libpinyin.overrideAttrs (super: {
+            patches = [ libpinyin/pull-119.patch ];
+        });
+
+    };
+
     # Packages that are installed globally.
     environment.systemPackages = [
         pkgs.ack                    # Like grep but for source code.
@@ -35,6 +46,7 @@ in
         pkgs.lxappearance           # Needed to change GTK+ preferences.
         pkgs.magic-wormhole         # File transfer tool.
         pkgs.man-pages              # Manual pages.
+        pkgs.multimc                # Minecraft launcher.
         pkgs.obs-studio             # Live streaming tool.
         pkgs.openscad               # CAD tool.
         pkgs.pavucontrol            # GUI for adjusting audio volume.
@@ -61,8 +73,5 @@ in
         # This shit still doesn’t work well.
         pkgs.gnome3.adwaita-icon-theme
         pkgs.hicolor-icon-theme
-
-        # Patched programs.
-        multimc                     # Minecraft launcher.
     ];
 }

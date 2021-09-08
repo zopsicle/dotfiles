@@ -1,0 +1,33 @@
+From 111c685802d8b2eec476fe6e08547e833f782ae1 Mon Sep 17 00:00:00 2001
+From: Weng Xuetian <xweng@google.com>
+Date: Mon, 17 Aug 2020 00:41:33 -0700
+Subject: [PATCH] Copy the data when merge into single ngram.
+
+system and user might be invalidated later.
+---
+ src/storage/ngram.cpp | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/src/storage/ngram.cpp b/src/storage/ngram.cpp
+index b8347d91..15165fd3 100644
+--- a/src/storage/ngram.cpp
++++ b/src/storage/ngram.cpp
+@@ -284,14 +284,14 @@ bool merge_single_gram(SingleGram * merged, const SingleGram * system,
+     MemoryChunk & merged_chunk = merged->m_chunk;
+ 
+     if (NULL == system) {
+-        merged_chunk.set_chunk(user->m_chunk.begin(),
+-                               user->m_chunk.size(), NULL);
++        merged_chunk.set_content(0, user->m_chunk.begin(),
++                                 user->m_chunk.size());
+         return true;
+     }
+ 
+     if (NULL == user) {
+-        merged_chunk.set_chunk(system->m_chunk.begin(),
+-                               system->m_chunk.size(), NULL);
++        merged_chunk.set_content(0, system->m_chunk.begin(),
++                                 system->m_chunk.size());
+         return true;
+     }
+ 
