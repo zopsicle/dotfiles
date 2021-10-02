@@ -37,7 +37,7 @@
         pkgs.file                   # Provides file command.
         pkgs.firefox                # Web browser.
         pkgs.git                    # Version control system.
-        pkgs.hexchat                # IRC client.
+        pkgs.hexchat                # Chat app.
         pkgs.htop                   # Process monitor.
         pkgs.imagemagick7           # Converts images.
         pkgs.inkscape               # Vector graphics editor.
@@ -46,6 +46,7 @@
         pkgs.lxappearance           # Needed to change GTK+ preferences.
         pkgs.magic-wormhole         # File transfer tool.
         pkgs.man-pages              # Manual pages.
+        pkgs.monero-gui             # Monero wallet.
         pkgs.multimc                # Minecraft launcher.
         pkgs.obs-studio             # Live streaming tool.
         pkgs.openscad               # CAD tool.
@@ -56,7 +57,7 @@
         pkgs.sakura                 # Terminal emulator.
         pkgs.sqlite-interactive     # Provides sqlite3 command.
         pkgs.steam                  # Steam proprietary game store.
-        pkgs.tdesktop               # Telegram desktop.
+        pkgs.tdesktop               # Chat app.
         pkgs.theme-vertex           # GTK+ theme.
         pkgs.thunderbird            # Email client.
         pkgs.transmission-gtk       # BitTorrent client.
