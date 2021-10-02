@@ -8,6 +8,7 @@
         ./fonts.nix
         ./input-methods.nix
         ./networking.nix
+        ./nix.nix
         ./redshift.nix
         ./software.nix
         ./spyware.nix
