@@ -1,0 +1,26 @@
+@-moz-document domain("discord.com") {
+html
+{
+    --background-primary: #221A0F !important;
+    --background-secondary: #221A0F !important;
+    --background-secondary-alt: #221A0F !important;
+    --background-tertiary: #221A0F !important;
+
+    --background-modifier-selected: #5E452B !important;
+    --channeltextarea-background: #5E452B !important;
+
+    --text-normal: #D3AF86 !important;
+    --header-primary: #D3AF86 !important;
+    --interactive-active: #D3AF86 !important;
+
+    --text-muted: #8c7459 !important;
+    --header-secondary: #8c7459 !important;
+    --channels-default: #8c7459 !important;
+}
+
+*
+{
+    scrollbar-color: #5E452B #221A0F !important;
+}
+
+}
