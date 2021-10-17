@@ -42,7 +42,6 @@
         pkgs.inkscape               # Vector graphics editor.
         pkgs.jq                     # Provides jq command.
         pkgs.krita                  # Bitmap graphics editor.
-        pkgs.lxappearance           # Program to set GTK theme.
         pkgs.magic-wormhole         # File transfer tool.
         pkgs.man-pages              # Manual pages.
         pkgs.monero-gui             # Monero wallet.
