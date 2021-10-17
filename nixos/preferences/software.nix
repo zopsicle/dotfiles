@@ -38,6 +38,7 @@
         pkgs.git                    # Version control system.
         pkgs.hexchat                # Chat app.
         pkgs.htop                   # Process monitor.
+        pkgs.i3blocks               # Adds buttons to i3bar.
         pkgs.imagemagick7           # Converts images.
         pkgs.inkscape               # Vector graphics editor.
         pkgs.jq                     # Provides jq command.

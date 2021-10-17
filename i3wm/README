@@ -1,4 +1,4 @@
 To install this configuration, symlink the configuration files:
 
     ln ~/dotfiles/i3wm/i3.conf       ~/.config/i3/config
-    ln ~/dotfiles/i3wm/i3status.conf ~/.config/i3statusb/config
+    ln ~/dotfiles/i3wm/i3blocks.conf ~/.config/i3blocks/config
