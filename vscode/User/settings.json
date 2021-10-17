@@ -5,16 +5,17 @@
     "editor.fontFamily": "'Terminus (TTF)', 'Noto Sans CJK TC'",
     "editor.fontSize": 18,
     "editor.lineHeight": 22,
-    "editor.rulers": [72, 80],
+    "editor.rulers": [80],
     "editor.snippetSuggestions": "none",
     "editor.useTabStops": true,
     "emmet.showExpandedAbbreviation": "never",
     "explorer.compactFolders": false,
     "explorer.openEditors.visible": 0,
     "files.associations": {
+        "*.bzl": "python",
+        "*.raku": "perl6",
         "BUILD": "python",
         "WORKSPACE": "python",
-        "*.bzl": "python",
     },
     "files.autoSave": "off",
     "files.insertFinalNewline": true,
@@ -31,4 +32,5 @@
     "workbench.iconTheme": null,
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
+    "php.validate.enable": false
 }

@@ -27,15 +27,14 @@
         pkgs.bind                   # Provides dig command.
         pkgs.binutils               # Provides objdump command.
         pkgs.blender                # 3D modeling program.
-        pkgs.blockbench-electron    # 3D modeling program for Minecraft models.
         pkgs.cura                   # Used for 3D printing.
-        pkgs.dconf                  # No idea, but needed.
-        pkgs.electrum               # Bitcoin wallet.
+        pkgs.dconf                  # No idea what this is, but needed.
         pkgs.evince                 # PDF reader.
-        pkgs.feh                    # Sets wallpaper.
+        pkgs.feh                    # Program to set wallpaper.
         pkgs.ffmpeg                 # Converts videos.
         pkgs.file                   # Provides file command.
         pkgs.firefox                # Web browser.
+        pkgs.gcolor2                # Color picker.
         pkgs.git                    # Version control system.
         pkgs.hexchat                # Chat app.
         pkgs.htop                   # Process monitor.
@@ -43,22 +42,22 @@
         pkgs.inkscape               # Vector graphics editor.
         pkgs.jq                     # Provides jq command.
         pkgs.krita                  # Bitmap graphics editor.
-        pkgs.lxappearance           # Needed to change GTK+ preferences.
+        pkgs.lxappearance           # Program to set GTK theme.
         pkgs.magic-wormhole         # File transfer tool.
         pkgs.man-pages              # Manual pages.
         pkgs.monero-gui             # Monero wallet.
         pkgs.multimc                # Minecraft launcher.
         pkgs.obs-studio             # Live streaming tool.
-        pkgs.openscad               # CAD tool.
-        pkgs.pavucontrol            # GUI for adjusting audio volume.
+        pkgs.pavucontrol            # Program to set audio volume.
         pkgs.peek                   # Animated GIF recorder.
         pkgs.picard                 # Fixes ID3 tags in music.
+        pkgs.picom                  # X compositor.
         pkgs.rofi                   # Application picker (Alt+D).
         pkgs.sakura                 # Terminal emulator.
         pkgs.sqlite-interactive     # Provides sqlite3 command.
         pkgs.steam                  # Steam proprietary game store.
         pkgs.tdesktop               # Chat app.
-        pkgs.theme-vertex           # GTK+ theme.
+        pkgs.theme-vertex           # GTK dark theme.
         pkgs.thunderbird            # Email client.
         pkgs.transmission-gtk       # BitTorrent client.
         pkgs.tree                   # Provides tree command.
@@ -66,12 +65,15 @@
         pkgs.vlc                    # VLC media player.
         pkgs.vscode                 # Good text editor.
         pkgs.wget                   # Provides wget command.
+        pkgs.wireshark-qt           # Network traffic analyzer.
         pkgs.youtube-dl-light       # Downloads YouTube videos.
         pkgs.zip                    # Provides zip command.
 
-        # Icon themes for GTK+ apps.
-        # This shit still doesn’t work well.
+        # Icon themes for GTK.
         pkgs.gnome3.adwaita-icon-theme
         pkgs.hicolor-icon-theme
     ];
+
+    # Enable using wireshark as non-root.
+    programs.wireshark.enable = true;
 }
