@@ -1,0 +1,31 @@
+@-moz-document domain("github.com") {
+html
+{
+    --color-canvas-default: #221A0F !important;
+    --color-canvas-inset: #221A0F !important;
+    --color-header-bg: #221A0F !important;
+    --color-btn-hover-bg: #221A0F !important;
+
+    --color-accent-subtle: #5E452B !important;
+    --color-accent-muted: #5E452B !important;
+    --color-border-default: #5E452B !important;
+    --color-border-muted: #5E452B !important;
+    --color-btn-bg: #5E452B !important;
+    --color-btn-border: #5E452B !important;
+    --color-btn-hover-border: #5E452B !important;
+    --color-canvas-subtle: #5E452B !important;
+    --color-header-search-bg: #5E452B !important;
+    --color-header-search-border: #5E452B !important;
+    --color-neutral-muted: #5E452B !important;
+
+    --color-fg-default: #D3AF86 !important;
+    --color-fg-subtle: #D3AF86 !important;
+    --color-btn-text: #D3AF86 !important;
+    --color-header-logo: #D3AF86 !important;
+    --color-primer-border-active: #D3AF86 !important;
+
+    --color-accent-fg: #8c7459 !important;
+    --color-fg-muted: #8c7459 !important;
+}
+
+}
