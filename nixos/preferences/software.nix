@@ -27,6 +27,7 @@
         pkgs.bind                   # Provides dig command.
         pkgs.binutils               # Provides objdump command.
         pkgs.blender                # 3D modeling program.
+        pkgs.cmus                   # Music player.
         pkgs.cura                   # Used for 3D printing.
         pkgs.dconf                  # No idea what this is, but needed.
         pkgs.evince                 # PDF reader.
