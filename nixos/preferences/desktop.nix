@@ -21,4 +21,9 @@
     services.xserver.libinput.enable = true;
     services.xserver.libinput.touchpad.naturalScrolling = false;
     services.xserver.libinput.touchpad.tapping = true;
+
+    # Make Qt apps look dark.
+    qt5.enable = true;
+    qt5.platformTheme = "gtk2";
+    qt5.style = "gtk2";
 }
