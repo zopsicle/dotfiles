@@ -67,7 +67,7 @@
         pkgs.vscode                 # Good text editor.
         pkgs.wget                   # Provides wget command.
         pkgs.wireshark-qt           # Network traffic analyzer.
-        pkgs.youtube-dl-light       # Downloads YouTube videos.
+        pkgs.yt-dlp-light           # Downloads YouTube videos.
         pkgs.zip                    # Provides zip command.
 
         # Icon themes for GTK.

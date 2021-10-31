@@ -1,0 +1,3 @@
+Extra notes:
+
+yt-dlp --format-sort 'height:720' --ignore-errors --write-info-json --write-thumbnail
