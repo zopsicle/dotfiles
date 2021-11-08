@@ -1,6 +1,6 @@
 {
     "diffEditor.ignoreTrimWhitespace": true,
-    "editor.bracketPairColorization.enabled": true,
+    "debug.javascript.codelens.npmScripts": "never",
     "editor.colorDecorators": false,
     "editor.fontFamily": "'Terminus (TTF)', 'Noto Sans CJK TC'",
     "editor.fontSize": 18,
@@ -12,6 +12,7 @@
     "explorer.compactFolders": false,
     "explorer.openEditors.visible": 0,
     "files.associations": {
+        "*.svelte": "html",
         "*.bzl": "python",
         "*.raku": "perl6",
         "BUILD": "python",
@@ -22,7 +23,8 @@
     "files.trimTrailingWhitespace": true,
     "html.autoClosingTags": false,
     "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
-    "telemetry.enableTelemetry": false,
+    "html.validate.scripts": false,
+    "telemetry.telemetryLevel": "off",
     "update.mode": "none",
     "window.enableMenuBarMnemonics": false,
     "window.menuBarVisibility": "hidden",
