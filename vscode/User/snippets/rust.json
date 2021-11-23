@@ -1,0 +1,13 @@
+{
+    "impl fmt::Debug": {
+        "body": [
+            "impl fmt::Debug for $1",
+            "{",
+            "    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result",
+            "    {",
+            "        $2",
+            "    }",
+            "}",
+        ]
+    }
+}

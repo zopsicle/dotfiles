@@ -1,6 +1,6 @@
 {
-    "diffEditor.ignoreTrimWhitespace": true,
     "debug.javascript.codelens.npmScripts": "never",
+    "diffEditor.ignoreTrimWhitespace": true,
     "editor.colorDecorators": false,
     "editor.fontFamily": "'Terminus (TTF)', 'Noto Sans CJK TC'",
     "editor.fontSize": 18,
@@ -12,18 +12,29 @@
     "explorer.compactFolders": false,
     "explorer.openEditors.visible": 0,
     "files.associations": {
-        "*.svelte": "html",
         "*.bzl": "python",
+        "*.idr": "haskell",
         "*.raku": "perl6",
+        "*.svelte": "html",
         "BUILD": "python",
         "WORKSPACE": "python",
     },
     "files.autoSave": "off",
+    "files.exclude": {
+        "**/*.olean": true,
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/Thumbs.db": true
+    },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "html.autoClosingTags": false,
-    "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
     "html.validate.scripts": false,
+    "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
+    "php.validate.enable": false,
     "telemetry.telemetryLevel": "off",
     "update.mode": "none",
     "window.enableMenuBarMnemonics": false,
@@ -33,6 +44,5 @@
     "workbench.editor.untitled.hint": "hidden",
     "workbench.iconTheme": null,
     "workbench.settings.editor": "json",
-    "workbench.startupEditor": "newUntitledFile",
-    "php.validate.enable": false
+    "workbench.startupEditor": "newUntitledFile"
 }
