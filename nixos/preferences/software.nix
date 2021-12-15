@@ -6,8 +6,8 @@
         # Latest Minecraft requires a newer JDK.
         multimc =
             let
-                with_jdk16 = pkgs.multimc.override { jdk8 = pkgs.jdk16; };
-                with_patches = with_jdk16.overrideAttrs (super: {
+                with_jdk17 = pkgs.multimc.override { jdk8 = pkgs.jdk17; };
+                with_patches = with_jdk17.overrideAttrs (super: {
                     patches = [ multimc/java-version.patch ];
                 });
             in
@@ -18,6 +18,11 @@
         libpinyin = pkgs.libpinyin.overrideAttrs (super: {
             patches = [ libpinyin/pull-119.patch ];
         });
+
+        blender = pkgs.callPackage ./blender {
+            inherit (pkgs.darwin.apple_sdk.frameworks)
+                Cocoa CoreGraphics ForceFeedback OpenAL OpenGL;
+        };
 
     };
 
@@ -77,4 +82,7 @@
 
     # Enable using wireshark as non-root.
     programs.wireshark.enable = true;
+
+    # Enable using Android debugger.
+    programs.adb.enable = true;
 }

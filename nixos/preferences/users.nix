@@ -8,5 +8,12 @@
     # This is the user I normally use.
     users.users.r.isNormalUser = true;
     users.users.r.hashedPassword = lib.fileContents ./passwd/r.txt;
-    users.users.r.extraGroups = [ "audio" "vboxusers" "video" "wheel" "wireshark" ];
+    users.users.r.extraGroups = [
+        "adbusers"
+        "audio"
+        "vboxusers"
+        "video"
+        "wheel"
+        "wireshark"
+    ];
 }

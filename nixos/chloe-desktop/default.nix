@@ -2,6 +2,7 @@
 
 {
     imports = [
+        ./alephium.nix
         ./boot-loader.nix
         ./file-systems.nix
         ./graphics.nix

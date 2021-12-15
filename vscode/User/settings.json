@@ -1,7 +1,7 @@
 {
     "debug.javascript.codelens.npmScripts": "never",
     "diffEditor.ignoreTrimWhitespace": true,
-    "editor.colorDecorators": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.fontFamily": "'Terminus (TTF)', 'Noto Sans CJK TC'",
     "editor.fontSize": 18,
     "editor.lineHeight": 22,
@@ -39,10 +39,10 @@
     "update.mode": "none",
     "window.enableMenuBarMnemonics": false,
     "window.menuBarVisibility": "hidden",
-    "workbench.colorTheme": "Kimbie Dark",
     "workbench.editor.enablePreview": false,
     "workbench.editor.untitled.hint": "hidden",
     "workbench.iconTheme": null,
     "workbench.settings.editor": "json",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Solarized Dark"
 }
