@@ -58,6 +58,7 @@
         pkgs.peek                   # Animated GIF recorder.
         pkgs.picard                 # Fixes ID3 tags in music.
         pkgs.picom                  # X compositor.
+        pkgs.gnome.pomodoro         # Break timer.
         pkgs.rofi                   # Application picker (Alt+D).
         pkgs.sakura                 # Terminal emulator.
         pkgs.sqlite-interactive     # Provides sqlite3 command.

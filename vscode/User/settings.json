@@ -2,9 +2,9 @@
     "debug.javascript.codelens.npmScripts": "never",
     "diffEditor.ignoreTrimWhitespace": true,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.fontFamily": "'Terminus (TTF)', 'Noto Sans CJK TC'",
-    "editor.fontSize": 18,
-    "editor.lineHeight": 22,
+    "editor.fontFamily": "'Ubuntu Mono', 'Terminus (TTF)', 'Noto Sans CJK TC'",
+    "editor.fontSize": 22,
+    "editor.lineHeight": 30,
     "editor.rulers": [80],
     "editor.snippetSuggestions": "none",
     "editor.useTabStops": true,
@@ -44,5 +44,6 @@
     "workbench.iconTheme": null,
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Solarized Dark"
+    "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "GitHub Dark Dimmed"
 }

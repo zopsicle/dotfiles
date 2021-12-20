@@ -7,6 +7,8 @@
         pkgs.montserrat
         pkgs.noto-fonts-cjk
         pkgs.roboto
+        pkgs.ubuntu_font_family
+        pkgs.hack-font
         pkgs.terminus_font_ttf
     ];
 
