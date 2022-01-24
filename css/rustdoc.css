@@ -1,0 +1,33 @@
+@-moz-document regexp(".*") {
+/*
+
+Make rustdoc colorful again!
+
+*/
+
+.rustdoc a { color: hsl(0, 75%, 75%); }
+.rustdoc .content span.enum, .rustdoc .content a.enum, .rustdoc .block a.current.enum { color: hsl(24, 75%, 75%); }
+.rustdoc .content span.struct, .rustdoc .content a.struct, .rustdoc .block a.current.struct { color: hsl(48, 75%, 75%); }
+.rustdoc .content span.type, .rustdoc .content a.type, .rustdoc .block a.current.type { color: hsl(72, 75%, 75%); }
+.rustdoc .content span.associatedtype,
+.rustdoc .content a.associatedtype,
+.rustdoc .block a.current.associatedtype { color: hsl(96, 75%, 75%); }
+.rustdoc .content span.foreigntype, .rustdoc .content a.foreigntype, .rustdoc .block a.current.foreigntype { color: hsl(120, 75%, 75%); }
+.rustdoc .content span.attr, .rustdoc .content a.attr, .rustdoc .block a.current.attr,
+.rustdoc .content span.derive, .rustdoc .content a.derive, .rustdoc .block a.current.derive,
+.rustdoc .content span.macro, .rustdoc .content a.macro, .rustdoc .block a.current.macro { color: hsl(144, 75%, 75%); }
+.rustdoc .content span.union, .rustdoc .content a.union, .rustdoc .block a.current.union { color: hsl(168, 75%, 75%); }
+.rustdoc .content span.constant, .rustdoc .content a.constant, .rustdoc .block a.current.constant,
+.rustdoc .content span.static, .rustdoc .content a.static, .rustdoc .block a.current.static { color: hsl(192, 75%, 75%); }
+.rustdoc .content span.primitive, .rustdoc .content a.primitive, .rustdoc .block a.current.primitive { color: hsl(216, 75%, 75%); }
+.rustdoc .content span.externcrate,
+.rustdoc .content span.mod, .rustdoc .content a.mod, .rustdoc .block a.current.mod { color: hsl(240, 75%, 75%); }
+.rustdoc .content span.trait, .rustdoc .content a.trait, .rustdoc .block a.current.trait { color: hsl(264, 75%, 75%); }
+.rustdoc .content span.traitalias, .rustdoc .content a.traitalias, .rustdoc .block a.current.traitalias { color: hsl(288, 75%, 75%); }
+.rustdoc .content span.fn, .rustdoc .content a.fn, .rustdoc .block a.current.fn,
+.rustdoc .content span.method, .rustdoc .content a.method, .rustdoc .block a.current.method,
+.rustdoc .content span.tymethod, .rustdoc .content a.tymethod, .rustdoc .block a.current.tymethod,
+.rustdoc .content .fnname{ color: hsl(312, 75%, 75%); }
+.rustdoc .content span.keyword, .rustdoc .content a.keyword, .rustdoc .block a.current.keyword { color: hsl(336, 75%, 75%); }
+
+}
