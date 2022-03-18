@@ -3,7 +3,7 @@
     "diffEditor.ignoreTrimWhitespace": true,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.fontFamily": "'Ubuntu Mono', 'Terminus (TTF)', 'Noto Sans CJK TC'",
-    "editor.fontSize": 22,
+    "editor.fontSize": 20,
     "editor.lineHeight": 30,
     "editor.rulers": [80],
     "editor.snippetSuggestions": "none",
@@ -31,6 +31,9 @@
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "[go]": {
+        "editor.insertSpaces": true
+    },
     "html.autoClosingTags": false,
     "html.validate.scripts": false,
     "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
@@ -45,5 +48,6 @@
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": true,
-    "workbench.colorTheme": "GitHub Dark Dimmed"
+    "workbench.colorTheme": "Kimbie Dark",
+    "typescript.updateImportsOnFileMove.enabled": "never"
 }
