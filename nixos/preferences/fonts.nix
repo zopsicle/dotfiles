@@ -16,6 +16,7 @@ in
     # Globally installed fonts.
     fonts.fonts = [
         comic-mono
+        pkgs.fantasque-sans-mono
         pkgs.fixedsys-excelsior
         pkgs.montserrat
         pkgs.noto-fonts-cjk

@@ -30,4 +30,9 @@ Make rustdoc colorful again!
 .rustdoc .content .fnname{ color: hsl(312, 75%, 75%); }
 .rustdoc .content span.keyword, .rustdoc .content a.keyword, .rustdoc .block a.current.keyword { color: hsl(336, 75%, 75%); }
 
+.rustdoc code, .rustdoc pre, .rustdoc a.test-arrow, .rustdoc .code-header
+{
+    font-family: "Fantasque Sans Mono", monospace;
+}
+
 }
