@@ -35,6 +35,7 @@
         "editor.insertSpaces": true
     },
     "html.autoClosingTags": false,
+    "html.autoCreateQuotes": false,
     "html.validate.scripts": false,
     "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
     "php.validate.enable": false,
@@ -48,6 +49,6 @@
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": true,
-    "workbench.colorTheme": "Kimbie Dark",
-    "typescript.updateImportsOnFileMove.enabled": "never"
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "workbench.colorTheme": "paddy-eucalyptus"
 }
