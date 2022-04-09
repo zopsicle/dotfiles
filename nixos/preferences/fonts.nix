@@ -10,12 +10,22 @@ let
             unzip -j "$downloadedFile" '*.ttf' -d "$out/share/fonts/truetype"
         '';
     };
+    quivira = pkgs.fetchzip {
+        name = "quivira";
+        url = "http://quivira-font.com/files/Quivira.otf";
+        sha256 = "0m66yrlbwyi78kxz252jrafsd5q16nh4zajrgqnv0v9b82x0zfpy";
+        postFetch = ''
+            mkdir --parents "$out/share/fonts"
+            mv "$downloadedFile" "$out/share/fonts/Quivira.otf"
+        '';
+    };
 in
 
 {
     # Globally installed fonts.
     fonts.fonts = [
         comic-mono
+        quivira
         pkgs.fantasque-sans-mono
         pkgs.fixedsys-excelsior
         pkgs.montserrat

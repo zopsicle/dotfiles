@@ -50,5 +50,11 @@
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": true,
     "typescript.updateImportsOnFileMove.enabled": "never",
-    "workbench.colorTheme": "paddy-eucalyptus"
+    "workbench.colorTheme": "paddy-eucalyptus",
+    "editor.unicodeHighlight.allowedCharacters": {
+        "’": true,
+        "‘": true,
+        "”": true,
+        "“": true
+    }
 }
