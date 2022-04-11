@@ -24,6 +24,14 @@
                 Cocoa CoreGraphics ForceFeedback OpenAL OpenGL;
         };
 
+        # This fixes a bug where VS Code expects a keychain to be running [1].
+        # [1]: https://github.com/microsoft/vscode/issues/146553
+        vscode = pkgs.vscode.overrideAttrs (super: {
+            postInstall = (super.postInstall or "") + ''
+                wrapProgram "$out/bin/code" --add-flags --disable-keytar
+            '';
+        });
+
     };
 
     # Packages that are installed globally.
