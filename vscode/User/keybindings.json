@@ -45,5 +45,17 @@
     {
         "key": "shift+escape",
         "command": "notifications.clearAll"
+    },
+    {
+        "key": "f6",
+        "command": "workbench.action.tasks.test"
+    },
+    {
+        "key": "shift+f6",
+        "command": "-workbench.action.focusPreviousPart"
+    },
+    {
+        "key": "f6",
+        "command": "-workbench.action.focusNextPart"
     }
 ]

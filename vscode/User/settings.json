@@ -12,6 +12,7 @@
     "explorer.compactFolders": false,
     "explorer.openEditors.visible": 0,
     "files.associations": {
+        "*.build_defs": "python",
         "*.bzl": "python",
         "*.idr": "haskell",
         "*.raku": "perl6",
@@ -56,5 +57,6 @@
         "‘": true,
         "”": true,
         "“": true
-    }
+    },
+    "javascript.updateImportsOnFileMove.enabled": "never"
 }
