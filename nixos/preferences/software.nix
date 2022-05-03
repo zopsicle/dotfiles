@@ -37,22 +37,17 @@
     # Packages that are installed globally.
     environment.systemPackages = [
         pkgs.ack                    # Like grep but for source code.
-        pkgs.audacity               # Audio file editor.
-        pkgs.bc                     # Calculator.
         pkgs.bind                   # Provides dig command.
         pkgs.binutils               # Provides objdump command.
         pkgs.blender                # 3D modeling program.
         pkgs.cmus                   # Music player.
-        pkgs.cura                   # Used for 3D printing.
         pkgs.dconf                  # No idea what this is, but needed.
-        pkgs.dolphinEmu             # GameCube and Wii emulator.
         pkgs.evince                 # PDF reader.
         pkgs.feh                    # Program to set wallpaper.
         pkgs.ffmpeg                 # Converts videos.
         pkgs.file                   # Provides file command.
         pkgs.firefox                # Web browser.
         pkgs.gcolor2                # Color picker.
-        pkgs.lmms                   # Audio editor.
         pkgs.git                    # Version control system.
         pkgs.hexchat                # Chat app.
         pkgs.htop                   # Process monitor.
@@ -65,18 +60,14 @@
         pkgs.man-pages              # Manual pages.
         pkgs.monero-gui             # Monero wallet.
         pkgs.multimc                # Minecraft launcher.
-        pkgs.obs-studio             # Live streaming tool.
         pkgs.pavucontrol            # Program to set audio volume.
         pkgs.peek                   # Animated GIF recorder.
         pkgs.picard                 # Fixes ID3 tags in music.
         pkgs.picom                  # X compositor.
-        pkgs.gnome.pomodoro         # Break timer.
-        pkgs.renderdoc              # Inspect Vulkan state.
         pkgs.rofi                   # Application picker (Alt+D).
         pkgs.sakura                 # Terminal emulator.
         pkgs.sqlite-interactive     # Provides sqlite3 command.
         pkgs.steam                  # Steam proprietary game store.
-        pkgs.tiled                  # 2D game map editor.
         pkgs.tdesktop               # Chat app.
         pkgs.theme-vertex           # GTK dark theme.
         pkgs.thunderbird            # Email client.
