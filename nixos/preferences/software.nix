@@ -38,6 +38,7 @@
     environment.systemPackages = [
         pkgs.ack                    # Like grep but for source code.
         pkgs.audacity               # Audio file editor.
+        pkgs.bc                     # Calculator.
         pkgs.bind                   # Provides dig command.
         pkgs.binutils               # Provides objdump command.
         pkgs.blender                # 3D modeling program.
