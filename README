@@ -5,4 +5,4 @@ yt-dlp --format-sort 'height:720' --ignore-errors --write-info-json --write-thum
 cd Mounts
 jmtpfs 'Pixel 4a'
 cd 'Pixel 4a/Internal shared storage/Music'
-rsync --dry-run --archive --ignore-existing --verbose /media/extra0/music/ .
+rsync --dry-run --archive --ignore-existing --verbose --exclude=\*.{gif,jpg,png} /media/extra0/music/ .
