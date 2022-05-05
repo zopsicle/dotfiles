@@ -40,6 +40,7 @@
         pkgs.bind                   # Provides dig command.
         pkgs.binutils               # Provides objdump command.
         pkgs.blender                # 3D modeling program.
+        pkgs.cicero-tui             # Unicode browser.
         pkgs.cmus                   # Music player.
         pkgs.dconf                  # No idea what this is, but needed.
         pkgs.evince                 # PDF reader.
