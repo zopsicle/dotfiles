@@ -3,15 +3,8 @@
 {
     nixpkgs.config.packageOverrides = pkgs: {
 
-        # Latest Minecraft requires a newer JDK.
-        multimc =
-            let
-                with_jdk17 = pkgs.multimc.override { jdk8 = pkgs.jdk17; };
-                with_patches = with_jdk17.overrideAttrs (super: {
-                    patches = [ multimc/java-version.patch ];
-                });
-            in
-                with_patches;
+        # Minecraft launcher.
+        polymc = pkgs.libsForQt5.callPackage ./polymc { };
 
         # Apply a patch to fix a bug [1].
         # [1]: https://github.com/libpinyin/libpinyin/pull/119
@@ -60,11 +53,11 @@
         pkgs.magic-wormhole         # File transfer tool.
         pkgs.man-pages              # Manual pages.
         pkgs.monero-gui             # Monero wallet.
-        pkgs.multimc                # Minecraft launcher.
         pkgs.pavucontrol            # Program to set audio volume.
         pkgs.peek                   # Animated GIF recorder.
         pkgs.picard                 # Fixes ID3 tags in music.
         pkgs.picom                  # X compositor.
+        pkgs.polymc                 # Minecraft launcher.
         pkgs.rofi                   # Application picker (Alt+D).
         pkgs.sakura                 # Terminal emulator.
         pkgs.sqlite-interactive     # Provides sqlite3 command.
