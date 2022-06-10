@@ -12,13 +12,7 @@
     "explorer.compactFolders": false,
     "explorer.openEditors.visible": 0,
     "files.associations": {
-        "*.build_defs": "python",
-        "*.bzl": "python",
-        "*.idr": "haskell",
-        "*.raku": "perl6",
         "*.svelte": "html",
-        "BUILD": "python",
-        "WORKSPACE": "python",
     },
     "files.autoSave": "off",
     "files.exclude": {
@@ -51,12 +45,19 @@
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": true,
     "typescript.updateImportsOnFileMove.enabled": "never",
-    "workbench.colorTheme": "paddy-wolf",
     "editor.unicodeHighlight.allowedCharacters": {
         "’": true,
         "‘": true,
         "”": true,
-        "“": true
+        "“": true,
+        "α": true
     },
-    "javascript.updateImportsOnFileMove.enabled": "never"
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "workbench.colorTheme": "Apprentice",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["g", "H"],
+            "commands": [{ "command": "editor.action.showDefinitionPreviewHover" }]
+        }
+    ]
 }
