@@ -5,7 +5,7 @@ Make rustdoc colorful again!
 
 */
 
-.rustdoc a { color: hsl(0, 75%, 75%); }
+.rustdoc a { color: #A571F4; }
 .rustdoc .content span.enum, .rustdoc .content a.enum, .rustdoc .block a.current.enum { color: hsl(24, 75%, 75%); }
 .rustdoc .content span.struct, .rustdoc .content a.struct, .rustdoc .block a.current.struct { color: hsl(48, 75%, 75%); }
 .rustdoc .content span.type, .rustdoc .content a.type, .rustdoc .block a.current.type { color: hsl(72, 75%, 75%); }
