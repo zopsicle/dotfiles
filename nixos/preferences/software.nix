@@ -3,20 +3,6 @@
 {
     nixpkgs.config.packageOverrides = pkgs: {
 
-        # Minecraft launcher.
-        polymc = pkgs.libsForQt5.callPackage ./polymc { };
-
-        # Apply a patch to fix a bug [1].
-        # [1]: https://github.com/libpinyin/libpinyin/pull/119
-        libpinyin = pkgs.libpinyin.overrideAttrs (super: {
-            patches = [ libpinyin/pull-119.patch ];
-        });
-
-        blender = pkgs.callPackage ./blender {
-            inherit (pkgs.darwin.apple_sdk.frameworks)
-                Cocoa CoreGraphics ForceFeedback OpenAL OpenGL;
-        };
-
         # This fixes a bug where VS Code expects a keychain to be running [1].
         # [1]: https://github.com/microsoft/vscode/issues/146553
         vscode = pkgs.vscode.overrideAttrs (super: {
