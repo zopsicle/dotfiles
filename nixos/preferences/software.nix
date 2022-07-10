@@ -44,6 +44,7 @@
         pkgs.picard                 # Fixes ID3 tags in music.
         pkgs.picom                  # X compositor.
         pkgs.polymc                 # Minecraft launcher.
+        pkgs.renderdoc              # OpenGL/Vulkan debugging program.
         pkgs.rofi                   # Application picker (Alt+D).
         pkgs.sakura                 # Terminal emulator.
         pkgs.sqlite-interactive     # Provides sqlite3 command.
