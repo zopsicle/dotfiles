@@ -36,4 +36,9 @@ Make rustdoc colorful again!
     font-variant-ligatures: none;
 }
 
+.rustdoc .docblock li:not(:first-child)
+{
+    margin-top: 16px;
+}
+
 }
