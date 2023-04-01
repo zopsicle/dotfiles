@@ -47,20 +47,12 @@
         "command": "notifications.clearAll"
     },
     {
-        "key": "f6",
-        "command": "workbench.action.tasks.test"
-    },
-    {
         "key": "shift+f6",
         "command": "-workbench.action.focusPreviousPart"
     },
     {
         "key": "f6",
         "command": "-workbench.action.focusNextPart"
-    },
-    {
-        "key": "f4",
-        "command": "workbench.panel.markers.view.focus"
     },
     {
         "key": "f4",
@@ -95,5 +87,9 @@
     {
         "key": "alt+f4",
         "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "f4",
+        "command": "explorer.newFile"
     }
 ]

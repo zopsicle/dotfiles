@@ -1,11 +1,14 @@
 {
     "debug.javascript.codelens.npmScripts": "never",
-    "diffEditor.ignoreTrimWhitespace": true,
+    "vim.joinspaces": false,
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.fontFamily": "'Fantasque Sans Mono', 'Ubuntu Mono', 'Noto Sans CJK TC'",
     "editor.fontSize": 20,
     "editor.lineHeight": 30,
-    "editor.rulers": [80],
+    "editor.rulers": [
+        80
+    ],
     "editor.snippetSuggestions": "none",
     "editor.useTabStops": true,
     "emmet.showExpandedAbbreviation": "never",
@@ -13,6 +16,7 @@
     "explorer.openEditors.visible": 0,
     "files.associations": {
         "*.svelte": "html",
+        "BUILD": "python"
     },
     "files.autoSave": "off",
     "files.exclude": {
@@ -29,6 +33,10 @@
     "[go]": {
         "editor.insertSpaces": true
     },
+    "[haskell]": {
+        "editor.tabSize": 2
+    },
+    "hlsl.suggest.basic": false,
     "html.autoClosingTags": false,
     "html.autoCreateQuotes": false,
     "html.validate.scripts": false,
@@ -53,11 +61,22 @@
         "α": true
     },
     "javascript.updateImportsOnFileMove.enabled": "never",
-    "workbench.colorTheme": "Apprentice",
+    "vim.ignorecase": false,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["g", "H"],
-            "commands": [{ "command": "editor.action.showDefinitionPreviewHover" }]
+            "before": [
+                "g",
+                "H"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.showDefinitionPreviewHover"
+                }
+            ]
         }
-    ]
+    ],
+    "git.confirmSync": false,
+    "extensions.autoUpdate": false,
+    "workbench.colorTheme": "Electron",
+    "workbench.panel.defaultLocation": "right"
 }
