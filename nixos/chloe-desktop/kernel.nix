@@ -11,6 +11,8 @@
     boot.initrd.kernelModules = [ ];
     boot.kernelModules = [ "kvm-intel" ];
 
+    hardware.steam-hardware.enable = true;
+
     # I have no idea what this means.
     # Computer works with this option.
     hardware.enableRedistributableFirmware = lib.mkDefault true;
