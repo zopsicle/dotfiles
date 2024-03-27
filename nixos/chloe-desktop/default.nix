@@ -9,7 +9,6 @@
         ./hostname.nix
         ./kernel.nix
         ./network.nix
-        ./nix.nix
         ./time-zone.nix
     ];
 }

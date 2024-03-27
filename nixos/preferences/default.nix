@@ -6,7 +6,6 @@
         ./core-dumps.nix
         ./desktop.nix
         ./fonts.nix
-        ./input-methods.nix
         ./networking.nix
         ./redshift.nix
         ./software.nix

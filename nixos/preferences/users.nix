@@ -11,9 +11,8 @@
     users.users.r.extraGroups = [
         "adbusers"
         "audio"
-        "vboxusers"
+        "input"
         "video"
         "wheel"
-        "wireshark"
     ];
 }

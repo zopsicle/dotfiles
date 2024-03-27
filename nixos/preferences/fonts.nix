@@ -23,9 +23,10 @@ in
 
 {
     # Globally installed fonts.
-    fonts.fonts = [
+    fonts.packages = [
         comic-mono
         quivira
+        pkgs.bqn386
         pkgs.fantasque-sans-mono
         pkgs.fixedsys-excelsior
         pkgs.montserrat

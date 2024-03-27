@@ -7,4 +7,8 @@
 
     # Firewall is annoying on workstation.
     networking.firewall.enable = false;
+
+    # Enable Bluetooth and management GUI.
+    hardware.bluetooth.enable = true;
+    services.blueman.enable = true;
 }

@@ -22,8 +22,26 @@
     services.xserver.libinput.touchpad.naturalScrolling = false;
     services.xserver.libinput.touchpad.tapping = true;
 
-    # Make Qt apps look dark.
-    qt5.enable = true;
-    qt5.platformTheme = "gtk2";
-    qt5.style = "gtk2";
+    # Enable IBus input method.
+    i18n.inputMethod.enabled = "ibus";
+    i18n.inputMethod.ibus.engines = [
+        pkgs.ibus-engines.libpinyin
+    ];
+
+    # Build ibus-libpinyin without keylogger so it cannot accidentally be
+    # enabled.
+    nixpkgs.config.packageOverrides = pkgs: {
+        ibus-engines.libpinyin =
+            pkgs.ibus-engines.libpinyin.overrideAttrs (self: super: {
+                configureFlags = super.configureFlags ++ ["--disable-cloud-input-mode"];
+            });
+    };
+
+    # Enable drawing tablet support.
+    services.xserver.wacom.enable = true;
+
+    # Allow Qt style customization.
+    qt.enable = true;
+    qt.platformTheme = "gtk2";
+    qt.style = "gtk2";
 }
