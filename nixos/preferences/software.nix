@@ -10,14 +10,11 @@
         pkgs.cicero-tui             # Unicode browser.
         pkgs.cmus                   # Music player.
         pkgs.dconf                  # No idea what this is, but needed.
-        pkgs.dolphin-emu-primehack  # GameCube emulator for Metroid Prime.
-        pkgs.dwarf-fortress         # Dwarf Fortress video game.
         pkgs.feh                    # Program to set wallpaper.
         pkgs.ffmpeg                 # Converts videos.
         pkgs.file                   # Provides file command.
         pkgs.firefox                # Web browser.
         pkgs.git                    # Version control system.
-        pkgs.git-lfs                # Git plug-in for working with large files.
         pkgs.hexchat                # Chat app.
         pkgs.hexyl                  # Hexdump clone.
         pkgs.htop                   # Process monitor.
@@ -26,11 +23,9 @@
         pkgs.inkscape               # Vector graphics editor.
         pkgs.jq                     # Provides jq command.
         pkgs.krita                  # Bitmap graphics editor.
-        pkgs.lmms                   # Audio editing program.
         pkgs.magic-wormhole         # File transfer tool.
         pkgs.man-pages              # Manual pages.
         pkgs.monero-gui             # Monero wallet.
-        pkgs.obs-studio             # Software for live streaming.
         pkgs.pavucontrol            # Program to set audio volume.
         pkgs.peek                   # Animated GIF recorder.
         pkgs.picom                  # X compositor.
