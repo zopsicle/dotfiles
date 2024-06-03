@@ -1,6 +1,10 @@
 { pkgs, ... }:
 
 {
+    nixpkgs.config.packageOverrides = pkgs: {
+        prismlauncher = pkgs.prismlauncher.override { jdk17 = pkgs.jdk21; };
+    };
+
     # Packages that are installed globally.
     environment.systemPackages = [
         pkgs.ack                    # Like grep but for source code.

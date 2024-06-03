@@ -1,5 +1,5 @@
 { ... }:
 
 {
-    networking.hostName = "chloe-desktop";
+    networking.hostName = "r-desktop";
 }
