@@ -19,17 +19,17 @@
         pkgs.file                   # Provides file command.
         pkgs.firefox                # Web browser.
         pkgs.git                    # Version control system.
-        pkgs.hexchat                # Chat app.
         pkgs.hexyl                  # Hexdump clone.
         pkgs.htop                   # Process monitor.
         pkgs.i3blocks               # Adds buttons to i3bar.
-        pkgs.imagemagick7           # Converts images.
+        pkgs.imagemagick            # Converts images.
         pkgs.inkscape               # Vector graphics editor.
         pkgs.jq                     # Provides jq command.
         pkgs.krita                  # Bitmap graphics editor.
         pkgs.magic-wormhole         # File transfer tool.
         pkgs.man-pages              # Manual pages.
         pkgs.monero-gui             # Monero wallet.
+        pkgs.obs-studio
         pkgs.pavucontrol            # Program to set audio volume.
         pkgs.peek                   # Animated GIF recorder.
         pkgs.picom                  # X compositor.
@@ -41,17 +41,18 @@
         pkgs.steam                  # Steam proprietary game store.
         pkgs.theme-vertex           # GTK dark theme.
         pkgs.thunderbird            # Email client.
-        pkgs.transmission-gtk       # BitTorrent client.
+        pkgs.transmission_4-gtk     # BitTorrent client.
         pkgs.tree                   # Provides tree command.
         pkgs.unzip                  # Provides unzip command.
         pkgs.vlc                    # VLC media player.
         pkgs.vscode                 # Good text editor.
+        pkgs.weechat                # Chat app.
         pkgs.wget                   # Provides wget command.
         pkgs.yt-dlp-light           # Downloads YouTube videos.
         pkgs.zip                    # Provides zip command.
 
         # Icon themes for GTK.
-        pkgs.gnome3.adwaita-icon-theme
+        pkgs.adwaita-icon-theme
         pkgs.hicolor-icon-theme
     ];
 

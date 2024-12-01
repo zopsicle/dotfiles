@@ -1,10 +1,10 @@
 { ... }:
 
 {
-    hardware.opengl.enable = true;
+    hardware.graphics.enable = true;
 
     # This option is needed for Steam to work.
-    hardware.opengl.driSupport32Bit = true;
+    hardware.graphics.enable32Bit = true;
 
     services.xserver.videoDrivers = [ "amdgpu" ];
 }

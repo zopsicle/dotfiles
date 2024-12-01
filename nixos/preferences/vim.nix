@@ -3,6 +3,7 @@
 {
     # Vim is a really bad editor,
     # but it works in a terminal.
+    programs.vim.enable = true;
     programs.vim.defaultEditor = true;
 
     # Install vimrc for all users (not in home directory).
